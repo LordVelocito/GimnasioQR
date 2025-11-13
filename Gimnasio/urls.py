@@ -36,7 +36,7 @@ urlpatterns = [
     path('management/plans/<int:plan_id>/delete/', views.admin_plan_delete, name='admin_plan_delete'),
 
     # Otras vistas
-    path('Scanner/', views.mostrar_Scanner, name='mostrar_Scanner'),
+    path('qr-scanner/', views.mostrar_Scanner, name='mostrar_Scanner'),
     path('QR/', views.mostrar_QRCodeEmail, name='mostrar_QRCodeEmail'),
     
     # API Endpoints

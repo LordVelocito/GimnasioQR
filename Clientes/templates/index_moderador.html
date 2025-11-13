@@ -421,11 +421,11 @@
             });
         });
 
-        // Función para abrir ventana QR
+        // Función para abrir ventana QR con la URL correcta de Django
         function openQRWindow() {
-            const qrWindow = window.open('/qr-scanner/', '_blank', 
+            const qrWindow = window.open("{% url 'mostrar_Scanner' %}", '_blank', 
                 'toolbar=no,location=no,status=no,menubar=no,scrollbars=no,resizable=yes,width=1920,height=1080');
-            
+        
             if (qrWindow) {
                 qrWindow.moveTo(0, 0);
                 qrWindow.resizeTo(screen.availWidth, screen.availHeight);

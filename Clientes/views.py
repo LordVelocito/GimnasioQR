@@ -1044,7 +1044,7 @@ def admin_plan_delete(request, plan_id):
 
 def mostrar_Scanner(request):
     """Esta vista renderiza la pÃ¡gina del Scanner."""
-    return render(request, 'base_admin.html')
+    return render(request, 'QR_Scanner.html')
 
 
 def mostrar_QRCodeEmail(request):
